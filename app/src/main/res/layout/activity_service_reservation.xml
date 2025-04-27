@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Name input field -->
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background" />
+
+        <!-- Spinner for selecting service type -->
+        <Spinner
+            android:id="@+id/serviceTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/service_types"
+            android:padding="12dp"
+            android:background="@drawable/spinner_background" />
+
+        <!-- Reserve button -->
+        <Button
+            android:id="@+id/reserveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?android:attr/colorPressedHighlight"
+            android:onClick="reserveService"
+            android:padding="12dp"
+            android:text="Reserve Service"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <!-- Service items section -->
+        <TextView
+            android:id="@+id/servicesTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available Services:"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+
+        <!-- Service 1 -->
+        <LinearLayout
+            android:id="@+id/service1Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/service1ImageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/spa"
+            android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/service1DescriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spa Service\nPrice: Rs.20000/= per session\nExperience rejuvenation with our luxurious spa treatments that combine relaxation and therapeutic benefits to revitalize your body and mind."
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Service 2 -->
+        <LinearLayout
+            android:id="@+id/service2Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/service2ImageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/pool"
+            android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/service2DescriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pool Access\nPrice: Rs.15000/= per session\nEnjoy a refreshing escape with our pool access, perfect for unwinding and soaking up the sun in a serene environment."
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <!-- Service 3 -->
+        <LinearLayout
+            android:id="@+id/service3Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/service3ImageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/dining"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/service3DescriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dining\nPrice: Rs.10000/= per session\nEnjoy a wide variety of dishes in a self-service format, allowing guests to customize their meals and savor as much as they desire."
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Service 4 -->
+        <LinearLayout
+            android:id="@+id/service4Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/service4ImageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/gym"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/service4DescriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gym\nPrice: Rs.85000/= per session\nA fully equipped fitness center offering a variety of exercise machines, free weights, and group classes to help you achieve your health and fitness goals."
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

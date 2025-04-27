@@ -1,0 +1,18 @@
+<resources>
+    <!-- App name -->
+    <string name="app_name">LuxeVista Resort</string>
+
+    <!-- Array for service types -->
+    <string-array name="service_types">
+        <item>Spa</item>
+        <item>Dining</item>
+        <item>Gym</item>
+        <item>Poolside Cabana</item>
+    </string-array>
+
+    <!-- Additional strings if needed -->
+    <string name="welcome_message">Welcome to LuxeVista Resort</string>
+    <string name="reservation_success">Your reservation was successful!</string>
+    <string name="reservation_failed">Failed to reserve the service. Please try again.</string>
+    <string name="book_now">Book Now</string>
+</resources>

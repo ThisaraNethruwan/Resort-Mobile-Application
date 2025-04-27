@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:padding="16dp">
+
+    <!-- Resort Name at the Top -->
+    <TextView
+        android:id="@+id/resortName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="LuxeVista Resort"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- Resort Logo in the Center -->
+
+    <!-- Input Fields and Buttons at the Bottom -->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="395dp"
+        android:layout_height="311dp"
+        android:layout_alignBottom="@+id/bottomSection"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="280dp"
+        android:contentDescription="Resort Logo"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/bottomSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingTop="16dp">
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:padding="12dp"
+            android:background="@drawable/rounded_input" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_input" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FFB200"
+            android:padding="12dp"
+            android:text="Login"
+            android:textColor="@color/black" />
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#FFB200"
+            android:padding="12dp"
+            android:text="Register"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</RelativeLayout>

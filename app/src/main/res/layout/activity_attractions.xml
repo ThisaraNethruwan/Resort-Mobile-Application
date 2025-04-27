@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header Section with Resort Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/resortName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="LuxeVista Resort"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Section for Exclusive Offers -->
+        <TextView
+            android:id="@+id/exclusiveOffersTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exclusive Offers"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/exclusiveOffersDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Save up to 30% on spa treatments\n• Special discounts for long stays\n• Complimentary breakfast for couples"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:paddingBottom="16dp"
+            android:textStyle="bold" />
+
+        <!-- Section for Nearby Attractions -->
+        <TextView
+            android:id="@+id/nearbyAttractionsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nearby Attractions"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:dividerPadding="8dp"
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/beachTours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🏖️ Beach Tours"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:paddingBottom="8dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/waterSports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🌊 Thrilling Water Sports"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:paddingBottom="8dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/diningRecommendations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🍽️ Fine Dining Recommendations"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:paddingBottom="8dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Section for Notifications -->
+        <TextView
+            android:id="@+id/notificationsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stay Updated"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/notificationsDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get notifications about hotel events, exclusive discounts, and updates on your reservations."
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:paddingBottom="16dp"
+            android:textStyle="bold" />
+
+        <!-- Button to Enable Notifications -->
+        <Button
+            android:id="@+id/enableNotificationsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:fontFamily="sans-serif-medium"
+            android:padding="12dp"
+            android:text="Enable Notifications"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+</ScrollView>
